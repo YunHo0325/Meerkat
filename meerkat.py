@@ -135,45 +135,20 @@ class Meerkat:
         
         
         start_Button = tk.Button(window, text ="   시작   ", command = startButton)
-        start_Button.place(x=200, y=200)
+        start_Button.place(x=300, y=200)
         start_Button.config(font=button_Font)
+        '''
         stop_Button = tk.Button(window, text ="   중지   ", command = endButton)
         stop_Button.place(x=400, y=200)
         stop_Button.config(font=button_Font)
-
+        '''
         window.mainloop()
 
-        
-            
-
-class clickListen:
-    def __init__(self):
-        pass
-        
-    def startListener(self):            
-        def on_move(x, y):
-            return
-
-
-        def on_click(x, y, button, pressed):
-            if pressed:
-                com_w_start = x
-                com_h_start = y
-
-
-        def on_scroll(x, y, dx, dy):
-            return
-            
-        with Listener(
-            on_click=on_click) as listener:
-            listener.join()
-        
+ 
         
         
 if __name__ == '__main__':
     shWin = Meerkat()
     shWin.showWindow()
-    
-    
     
     
