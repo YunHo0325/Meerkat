@@ -127,21 +127,12 @@ class Meerkat:
         y_txt = tk.Entry(window, textvariable=com_h_start)
         y_txt.place(x=445, y=100)
         
-        '''
-        select_Button = tk.Button(window, text="   선택   ", command = pointClick)
-        select_Button.config(font=button_Font)
-        select_Button.place(x=200, y=100)
-        '''
         
         
         start_Button = tk.Button(window, text ="   시작   ", command = startButton)
         start_Button.place(x=300, y=200)
         start_Button.config(font=button_Font)
-        '''
-        stop_Button = tk.Button(window, text ="   중지   ", command = endButton)
-        stop_Button.place(x=400, y=200)
-        stop_Button.config(font=button_Font)
-        '''
+
         window.mainloop()
 
  
